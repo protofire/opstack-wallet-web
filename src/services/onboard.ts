@@ -49,9 +49,9 @@ export const createOnboard = (
     },
 
     appMetadata: {
-      name: 'Safe{Wallet}',
+      name: 'Superchain Safe',
       icon: location.origin + '/images/logo-round.svg',
-      description: 'Safe{Wallet} – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)',
+      description: 'Superchain Safe – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)',
       recommendedInjectedWallets: getRecommendedInjectedWallets(),
     },
 
