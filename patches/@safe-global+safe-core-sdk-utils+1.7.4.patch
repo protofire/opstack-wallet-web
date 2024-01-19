@@ -1,8 +1,16 @@
 diff --git a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
-index 7dbddf5..cdf840d 100644
+index 7dbddf5..8f4df90 100644
 --- a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
 +++ b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
-@@ -94,6 +94,7 @@ exports.networks = [
+@@ -45,6 +45,7 @@ exports.networks = [
+     { chainId: 336, shortName: 'sdn' },
+     { chainId: 338, shortName: 'tcro' },
+     { chainId: 420, shortName: 'ogor' },
++    { chainId: 424, shortName: 'PGN' },
+     { chainId: 588, shortName: 'metis-stardust' },
+     { chainId: 592, shortName: 'astr' },
+     { chainId: 595, shortName: 'maca' },
+@@ -94,6 +95,7 @@ exports.networks = [
      { chainId: 12357, shortName: 'rei-testnet' },
      { chainId: 23294, shortName: 'sapphire' },
      { chainId: 23295, shortName: 'sapphire-testnet' },
@@ -10,7 +18,7 @@ index 7dbddf5..cdf840d 100644
      { chainId: 42161, shortName: 'arb1' },
      { chainId: 42170, shortName: 'arb-nova' },
      { chainId: 42220, shortName: 'celo' },
-@@ -117,6 +118,7 @@ exports.networks = [
+@@ -117,6 +119,7 @@ exports.networks = [
      { chainId: 421611, shortName: 'arb-rinkeby' },
      { chainId: 421613, shortName: 'arb-goerli' },
      { chainId: 534353, shortName: 'scr-alpha' },
