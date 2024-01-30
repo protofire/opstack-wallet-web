@@ -71,8 +71,24 @@ const Footer = (): ReactElement | null => {
         ) : null}
 
         <li>
+          <ExternalLink noIcon href="https://www.optimism.io/about">
+            Optimism
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink noIcon href="https://app.optimism.io/superchain">
+            Superchain
+          </ExternalLink>
+        </li>
+        <li>
           <ExternalLink href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`}>
             v{packageJson.version}
+          </ExternalLink>
+        </li>
+        <li>
+          Deployed by{' '}
+          <ExternalLink noIcon href="https://protofire.io/services/safe-deployment">
+            Protofire
           </ExternalLink>
         </li>
         {/*<li>
