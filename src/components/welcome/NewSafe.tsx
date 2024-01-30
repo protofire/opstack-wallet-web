@@ -33,13 +33,13 @@ const NewSafe = () => {
             </Typography>
 
             <Typography mb={1} color="static.main">
-              The most trusted decentralized custody protocol and collective asset management platform.
+              The most trusted decentralized custody protocol and collective asset management platform on Superchain.
             </Typography>
 
             <ul className={css.bulletList}>
               <BulletListItem text="Stealth security with multiple owners" />
-              <BulletListItem text="Make it yours with modules and guards" />
-              <BulletListItem text="Access 130+ ecosystem apps" />
+              <BulletListItem text="Create safes seamlessly across OP Chains" />
+              <BulletListItem text="Make it yours with modules, guards and ecosystem apps" />
             </ul>
           </div>
         </Grid>
