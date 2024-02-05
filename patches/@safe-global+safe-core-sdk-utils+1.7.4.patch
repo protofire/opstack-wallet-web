@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
-index 7dbddf5..67d46d7 100644
+index 7dbddf5..545112f 100644
 --- a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
 +++ b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
 @@ -45,12 +45,14 @@ exports.networks = [
@@ -25,12 +25,13 @@ index 7dbddf5..67d46d7 100644
      { chainId: 42161, shortName: 'arb1' },
      { chainId: 42170, shortName: 'arb-nova' },
      { chainId: 42220, shortName: 'celo' },
-@@ -117,8 +120,10 @@ exports.networks = [
+@@ -117,8 +120,11 @@ exports.networks = [
      { chainId: 421611, shortName: 'arb-rinkeby' },
      { chainId: 421613, shortName: 'arb-goerli' },
      { chainId: 534353, shortName: 'scr-alpha' },
 +    { chainId: 7777777, shortName: 'zora' },
      { chainId: 11155111, shortName: 'sep' },
++    { chainId: 11155420, shortName: 'opsep' },
      { chainId: 245022926, shortName: 'neonevm-devnet' },
 +    { chainId: 999999999, shortName: 'zsep' },
      { chainId: 1313161554, shortName: 'aurora' },
