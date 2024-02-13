@@ -1,15 +1,14 @@
 import { CYPRESS_MNEMONIC, TREZOR_APP_URL, TREZOR_EMAIL, WC_PROJECT_ID } from '@/config/constants'
-import type { RecommendedInjectedWallets, WalletInit } from '@web3-onboard/common/dist/types.d'
+import type { WalletInit } from '@web3-onboard/common/dist/types.d'
 import type { ChainInfo } from '@safe-global/safe-gateway-typescript-sdk'
 
 import coinbaseModule from '@web3-onboard/coinbase'
-import injectedWalletModule, { ProviderLabel } from '@web3-onboard/injected-wallets'
+import injectedWalletModule from '@web3-onboard/injected-wallets'
 import keystoneModule from '@web3-onboard/keystone/dist/index'
 import ledgerModule from '@web3-onboard/ledger/dist/index'
 import trezorModule from '@web3-onboard/trezor'
 import walletConnect from '@web3-onboard/walletconnect'
 
-import pairingModule from '@/services/pairing/module'
 import e2eWalletModule from '@/tests/e2e-wallet'
 import { CGW_NAMES, WALLET_KEYS } from './consts'
 import MpcModule from '@/services/mpc/SocialLoginModule'
@@ -42,7 +41,6 @@ const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit }
   [WALLET_KEYS.INJECTED]: () => injectedWalletModule(),
   [WALLET_KEYS.WALLETCONNECT_V2]: (chain) => walletConnectV2(chain),
   [WALLET_KEYS.COINBASE]: () => coinbaseModule({ darkMode: prefersDarkMode() }),
-  [WALLET_KEYS.PAIRING]: () => pairingModule(),
   [WALLET_KEYS.SOCIAL]: (chain) => MpcModule(chain),
   [WALLET_KEYS.LEDGER]: () => ledgerModule(),
   [WALLET_KEYS.TREZOR]: () => trezorModule({ appUrl: TREZOR_APP_URL, email: TREZOR_EMAIL }),
@@ -51,10 +49,6 @@ const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit }
 
 export const getAllWallets = (chain: ChainInfo): WalletInit[] => {
   return Object.values(WALLET_MODULES).map((module) => module(chain))
-}
-
-export const getRecommendedInjectedWallets = (): RecommendedInjectedWallets[] => {
-  return [{ name: ProviderLabel.MetaMask, url: 'https://metamask.io' }]
 }
 
 export const isWalletSupported = (disabledWallets: string[], walletLabel: string): boolean => {

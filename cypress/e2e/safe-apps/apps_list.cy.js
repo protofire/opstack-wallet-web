@@ -8,7 +8,9 @@ const myCustomAppDescrAdded = 'Cypress Test App Description'
 describe('Safe Apps list tests', () => {
   beforeEach(() => {
     cy.clearLocalStorage()
-    cy.visit(constants.SEPOLIA_TEST_SAFE_4 + constants.appsUrl, { failOnStatusCode: false })
+    cy.visit(`${constants.appsUrl}?safe=${constants.SEPOLIA_TEST_SAFE_4}`, {
+      failOnStatusCode: false,
+    })
     main.acceptCookies()
   })
 
@@ -16,13 +18,13 @@ describe('Safe Apps list tests', () => {
     // Wait for /safe-apps response
     cy.intercept('GET', constants.appsEndpoint).then(() => {
       safeapps.typeAppName(constants.appNames.walletConnect)
-      safeapps.verifyLinkName(safeapps.linkNames.logo)
+      safeapps.verifyLinkName(safeapps.linkNames.wcLogo)
     })
   })
 
   it('Verify app list can be filtered by app description', () => {
     safeapps.typeAppName(constants.appNames.customContract)
-    safeapps.verifyLinkName(safeapps.linkNames.logo)
+    safeapps.verifyLinkName(safeapps.linkNames.txBuilderLogo)
   })
 
   it('Verify error message is displayed when no app found', () => {

@@ -7,6 +7,7 @@ export const contractMethodIndex = '[name="contractMethodIndex"]'
 export const saveToLibraryBtn = 'button[title="Save to Library"]'
 export const downloadBatchBtn = 'button[title="Download batch"]'
 export const deleteBatchBtn = 'button[title="Delete Batch"]'
+const appModal = '[data-testid="app-info-modal"]'
 
 const addBtnStr = /add/i
 const noAppsStr = /no Safe Apps found/i
@@ -31,7 +32,7 @@ export const transactionDetailsStr = /transaction details/i
 export const addOwnerWithThreshold = /add owner with threshold/i
 export const enterABIStr = /Enter ABI/i
 export const toAddressStr = /to address/i
-export const gorValue = /gor value */i
+export const tokenAmount = /ETH value */i
 export const dataStr = /data */i
 export const clearTransactionListStr = /Clear transaction list?/i
 export const confirmClearTransactionListStr = /Yes, clear/i
@@ -51,6 +52,8 @@ export const recipientStr = /recipient/i
 export const validRecipientAddressStr = /please enter a valid recipient address/i
 export const testAddressValue2 = 'testAddressValue'
 export const testBooleanValue = 'testBooleanValue'
+export const testFallback = 'fallback'
+export const customData = 'Custom hex data'
 export const testBooleanValue1 = '1 testBooleanValue'
 export const testBooleanValue2 = '2 testBooleanValue'
 export const testBooleanValue3 = '3 testBooleanValue'
@@ -60,6 +63,7 @@ export const testTransfer1 = '1 transfer'
 export const testTransfer2 = '2 transfer'
 export const testNativeTransfer2 = '2 native transfer'
 export const testNativeTransfer1 = '1 native transfer'
+export const testNativeTransfer = 'native transfer'
 
 export const newValueBool = 'newValue(bool):'
 export const ownerAddressStr = 'owner (address)'
@@ -74,6 +78,7 @@ export const useImplementationABI = 'Use Implementation ABI'
 export const addressNotValidStr = 'The address is not valid'
 export const transferEverythingStr = 'Transfer everything'
 export const noTokensSelectedStr = 'No tokens selected'
+export const reviewConfirmStr = 'Review and Confirm'
 export const requiredStr = 'Required'
 export const e3eTestStr = 'E2E test'
 export const createBtnStr = 'Create'
@@ -84,7 +89,7 @@ export const failedStr = 'Failed'
 
 export const pinWalletConnectStr = /pin walletconnect/i
 export const transactionBuilderStr = 'Transaction Builder'
-export const testAddressValueStr = 'test Address Value'
+export const testAddressValueStr = 'testAddressValue'
 export const logoWalletConnect = /logo.*walletconnect/i
 export const walletConnectHeadlinePreview = /walletconnect/i
 export const newAddressValueStr = 'newValue (address)'
@@ -97,7 +102,8 @@ export const localStorageItem =
   '{"https://safe-test-app.com":[{"feature":"camera","status":"granted"},{"feature":"microphone","status":"denied"}]}'
 export const gridItem = 'main .MuiPaper-root > .MuiGrid-item'
 export const linkNames = {
-  logo: /logo/i,
+  wcLogo: /WalletConnect logo/i,
+  txBuilderLogo: /Transaction Builder logo/i,
 }
 export const abi =
   '[{{}"inputs":[{{}"internalType":"address","name":"_singleton","type":"address"{}}],"stateMutability":"nonpayable","type":"constructor"{}},{{}"stateMutability":"payable","type":"fallback"{}}]'
@@ -208,7 +214,14 @@ function verifyDisclaimerIsVisible() {
 }
 
 export function clickOnContinueBtn() {
+  cy.get(appModal).should('exist')
   return cy.findByRole('button', { name: continueBtnStr }).click().wait(1000)
+}
+
+export function checkLocalStorage() {
+  clickOnContinueBtn().should(() => {
+    expect(window.localStorage.getItem(constants.BROWSER_PERMISSIONS_KEY)).to.eq(localStorageItem)
+  })
 }
 
 export function verifyCameraCheckBoxExists() {

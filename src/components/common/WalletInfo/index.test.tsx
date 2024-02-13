@@ -45,6 +45,8 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
@@ -60,6 +62,8 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
@@ -75,6 +79,8 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
@@ -101,10 +107,12 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
-    expect(getByText('Delete Account')).toBeInTheDocument()
+    expect(getByText('Delete account')).toBeInTheDocument()
   })
 
   it('should not display a Delete Account on prod', () => {
@@ -119,10 +127,12 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
-    expect(queryByText('Delete Account')).not.toBeInTheDocument()
+    expect(queryByText('Delete account')).not.toBeInTheDocument()
   })
 
   it('should not display a Delete Account if not social login', () => {
@@ -137,10 +147,12 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
-    expect(queryByText('Delete Account')).not.toBeInTheDocument()
+    expect(queryByText('Delete account')).not.toBeInTheDocument()
   })
 
   it('should display an enable mfa button if mfa is not enabled', () => {
@@ -154,6 +166,8 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
@@ -174,6 +188,8 @@ describe('WalletInfo', () => {
         onboard={mockOnboard}
         addressBook={{}}
         handleClose={jest.fn()}
+        balance={undefined}
+        currentChainId="1"
       />,
     )
 
