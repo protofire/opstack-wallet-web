@@ -39,6 +39,7 @@ const ChainLogos = {
   [chains['PGN']]: '/images/networks/pgn.svg',
   [chains.zora]: '/images/networks/zora.svg',
   [chains.zsep]: '/images/networks/zora.png',
+  [chains.lisksep]: '/images/networks/lisksep.png',
 }
 
 export const getChainLogo = (chainId: string) => {
