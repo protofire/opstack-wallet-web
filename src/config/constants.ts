@@ -5,7 +5,8 @@ export const IS_DEV = process.env.NODE_ENV === 'development'
 
 export const GATEWAY_URL_PRODUCTION =
   process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://gateway.safe.optimism.io'
-export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://gateway.safe.optimism.io'
+export const GATEWAY_URL_STAGING =
+  process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://gateway.staging.safe.optimism.io'
 
 // Magic numbers
 export const POLLING_INTERVAL = 15_000

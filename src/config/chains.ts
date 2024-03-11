@@ -40,6 +40,7 @@ const ChainLogos = {
   [chains.zora]: '/images/networks/zora.svg',
   [chains.zsep]: '/images/networks/zora.png',
   [chains.lisksep]: '/images/networks/lisksep.png',
+  [chains.fraxtal]: '/images/networks/fraxtal.svg',
 }
 
 export const getChainLogo = (chainId: string) => {
