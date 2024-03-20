@@ -19,6 +19,9 @@ import useWallet from '@/hooks/wallets/useWallet'
 import { isSocialWalletEnabled } from '@/hooks/wallets/wallets'
 import { isSocialLoginWallet } from '@/services/mpc/SocialLoginModule'
 
+import type { ExternalChainInfo } from '@/config/chains'
+import { EXTERNAL_NETWORKS } from '@/config/chains'
+
 const keepPathRoutes = [AppRoutes.welcome.index, AppRoutes.newSafe.create, AppRoutes.newSafe.load]
 
 const MenuWithTooltip = forwardRef<HTMLUListElement>(function MenuWithTooltip(props: any, ref) {
@@ -31,7 +34,7 @@ const MenuWithTooltip = forwardRef<HTMLUListElement>(function MenuWithTooltip(pr
   )
 })
 
-const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement => {
+const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains?: boolean }): ReactElement => {
   const wallet = useWallet()
   const isDarkMode = useDarkMode()
   const theme = useTheme()
@@ -96,6 +99,16 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
     [getNetworkLink, isSocialLogin, props.onChainSelect],
   )
 
+  const renderExternalMenuItem = (value: string, chain: ExternalChainInfo) => {
+    return (
+      <MenuItem key={value} value={value} className={css.menuItem}>
+        <a href={chain.externalHref} className={css.item} target="_blank" rel="noreferrer">
+          <ChainIndicator chainId={chain.chainId} inline />
+        </a>
+      </MenuItem>
+    )
+  }
+
   return configs.length ? (
     <Select
       value={chainId}
@@ -131,6 +144,10 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
       <ListSubheader className={css.listSubHeader}>Testnets</ListSubheader>
 
       {testNets.map((chain) => renderMenuItem(chain.chainId, chain))}
+
+      {props.showExternalChains ? <ListSubheader className={css.listSubHeader}>safe.global</ListSubheader> : null}
+
+      {props.showExternalChains ? EXTERNAL_NETWORKS.map((chain) => renderExternalMenuItem(chain.chainId, chain)) : null}
     </Select>
   ) : (
     <Skeleton width={94} height={31} sx={{ mx: 2 }} />

@@ -1,4 +1,4 @@
-import { getChainLogo } from '@/config/chains'
+import { EXTERNAL_NETWORKS, getChainLogo } from '@/config/chains'
 import type { ReactElement } from 'react'
 import { useMemo } from 'react'
 import classnames from 'classnames'
@@ -37,7 +37,9 @@ const ChainIndicator = ({
   const id = chainId || currentChainId
   const chains = useAppSelector(selectChains)
   const chainConfig =
-    useAppSelector((state) => selectChainById(state, id)) || (showUnknown ? fallbackChainConfig : null)
+    useAppSelector((state) => selectChainById(state, id)) ||
+    EXTERNAL_NETWORKS.find((chain) => chain.chainId === id) ||
+    (showUnknown ? fallbackChainConfig : null)
   const noChains = isEmpty(chains.data)
 
   const style = useMemo(() => {

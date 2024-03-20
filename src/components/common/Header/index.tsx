@@ -92,7 +92,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
       </div>
 
       <div className={classnames(css.element, css.networkSelector)}>
-        <NetworkSelector />
+        <NetworkSelector showExternalChains />
       </div>
     </Paper>
   )
