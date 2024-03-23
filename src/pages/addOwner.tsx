@@ -23,7 +23,7 @@ const AddOwner: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Superchain Safe – Add Owner'}</title>
+        <title>{'Superchain Safe – Add Signer'}</title>
       </Head>
     </>
   )
