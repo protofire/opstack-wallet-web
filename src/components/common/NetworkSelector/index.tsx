@@ -22,18 +22,6 @@ import { isSocialLoginWallet } from '@/services/mpc/SocialLoginModule'
 import type { ExternalChainInfo } from '@/config/chains'
 import { EXTERNAL_NETWORKS } from '@/config/chains'
 
-const keepPathRoutes = [AppRoutes.welcome.index, AppRoutes.newSafe.create, AppRoutes.newSafe.load]
-
-const MenuWithTooltip = forwardRef<HTMLUListElement>(function MenuWithTooltip(props: any, ref) {
-  return (
-    <Tooltip title="More network support coming soon" arrow placement="left">
-      <ul ref={ref} {...props}>
-        {props.children}
-      </ul>
-    </Tooltip>
-  )
-})
-
 const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains?: boolean }): ReactElement => {
   const wallet = useWallet()
   const isDarkMode = useDarkMode()
@@ -125,10 +113,10 @@ const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains
           },
           ...(isDarkMode
             ? {
-              '& .Mui-selected, & .Mui-selected:hover': {
-                backgroundColor: `${theme.palette.secondary.background} !important`,
-              },
-            }
+                '& .Mui-selected, & .Mui-selected:hover': {
+                  backgroundColor: `${theme.palette.secondary.background} !important`,
+                },
+              }
             : {}),
         },
       }}
