@@ -36,7 +36,7 @@ const ChainLogos = {
   [chains.sep]: '/images/networks/sep.png',
   [chains.opsep]: '/images/networks/optimism.svg',
   [chains.mode]: '/images/networks/mode.png',
-  [chains['modeTestnet']]: '/images/networks/mode-test.png',
+  [chains.modesep]: '/images/networks/mode-test.png',
   [chains['PGN']]: '/images/networks/pgn.svg',
   [chains.zora]: '/images/networks/zora.svg',
   [chains.zsep]: '/images/networks/zora.png',
