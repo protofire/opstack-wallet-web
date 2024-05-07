@@ -42,8 +42,8 @@ const ChainLogos = {
   [chains.zsep]: '/images/networks/zora.png',
   [chains.lisksep]: '/images/networks/lisksep.png',
   [chains.fraxtal]: '/images/networks/fraxtal.svg',
-  [chains['redstone-mainnet']]: '/images/networks/redstone.png',
-  [chains['redstone-garnet']]: '/images/networks/garnet.png',
+  [chains.redstone]: '/images/networks/redstone.png',
+  [chains.garnet]: '/images/networks/garnet.png',
 }
 
 export type ExternalChainInfo = Pick<ChainInfo, 'chainId' | 'chainName' | 'shortName' | 'theme'> & {
