@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index cfc40d8..71d0a34 100644
+index cfc40d8..0b3159d 100644
 --- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 @@ -48,6 +48,7 @@ exports.networks = [
@@ -26,15 +26,34 @@ index cfc40d8..71d0a34 100644
      { chainId: 787n, shortName: 'aca' },
      { chainId: 919n, shortName: 'modesep' },
      { chainId: 1001n, shortName: 'baobab' },
-@@ -102,6 +104,7 @@ exports.networks = [
+@@ -77,6 +79,7 @@ exports.networks = [
+     { chainId: 1112n, shortName: 'twemix' },
+     { chainId: 1115n, shortName: 'tcore' },
+     { chainId: 1116n, shortName: 'core' },
++    { chainId: 1135n, shortName: 'lisk' },
+     { chainId: 1230n, shortName: 'UltronTestnet' },
+     { chainId: 1231n, shortName: 'UltronMainnet' },
+     { chainId: 1284n, shortName: 'mbeam' },
+@@ -100,8 +103,10 @@ exports.networks = [
+     { chainId: 2221n, shortName: 'tkava' },
+     { chainId: 2222n, shortName: 'kava' },
      { chainId: 2358n, shortName: 'kroma-sepolia' },
++    { chainId: 2523n, shortName: 'fraxtal-sep' },
      { chainId: 3737n, shortName: 'csb' },
      { chainId: 4002n, shortName: 'tftm' },
 +    { chainId: 4202n, shortName: 'lisksep' },
      { chainId: 4337n, shortName: 'beam' },
      { chainId: 4460n, shortName: 'orderlyl2' },
      { chainId: 4689n, shortName: 'iotex-mainnet' },
-@@ -134,6 +137,7 @@ exports.networks = [
+@@ -115,6 +120,7 @@ exports.networks = [
+     { chainId: 7001n, shortName: 'zetachain-athens' },
+     { chainId: 7332n, shortName: 'EON' },
+     { chainId: 7341n, shortName: 'shyft' },
++    { chainId: 7560n, shortName: 'cyeth' },
+     { chainId: 7700n, shortName: 'canto' },
+     { chainId: 8192n, shortName: 'tqf' },
+     { chainId: 8194n, shortName: 'ttqf' },
+@@ -134,6 +140,7 @@ exports.networks = [
      { chainId: 12357n, shortName: 'rei-testnet' },
      { chainId: 13337n, shortName: 'beam-testnet' },
      { chainId: 17000n, shortName: 'holesky' },
@@ -42,3 +61,11 @@ index cfc40d8..71d0a34 100644
      { chainId: 17172n, shortName: 'eclipse' },
      { chainId: 18231n, shortName: 'unreal' },
      { chainId: 23294n, shortName: 'sapphire' },
+@@ -176,6 +183,7 @@ exports.networks = [
+     { chainId: 7777777n, shortName: 'zora' },
+     { chainId: 11155111n, shortName: 'sep' },
+     { chainId: 11155420n, shortName: 'opsep' },
++    { chainId: 111557560n, shortName: 'cysep' },
+     { chainId: 222000222n, shortName: 'kanazawa' },
+     { chainId: 245022926n, shortName: 'neonevm-devnet' },
+     { chainId: 245022934n, shortName: 'neonevm-mainnet' },
