@@ -1,8 +1,16 @@
 diff --git a/node_modules/@safe-global/api-kit/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/api-kit/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index 506ccb3..862cc36 100644
+index 506ccb3..162cdb3 100644
 --- a/node_modules/@safe-global/api-kit/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/api-kit/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-@@ -64,7 +64,7 @@ exports.networks = [
+@@ -46,6 +46,7 @@ exports.networks = [
+     { chainId: 148n, shortName: 'shimmerevm-mainnet' },
+     { chainId: 155n, shortName: 'tenet-testnet' },
+     { chainId: 169n, shortName: 'manta' },
++    { chainId: 185n, shortName: 'mint' },
+     { chainId: 195n, shortName: 'tokb' },
+     { chainId: 196n, shortName: 'okb' },
+     { chainId: 204n, shortName: 'opbnb' },
+@@ -64,7 +65,7 @@ exports.networks = [
      { chainId: 338n, shortName: 'tcro' },
      { chainId: 369n, shortName: 'pls' },
      { chainId: 420n, shortName: 'ogor' },
@@ -11,7 +19,7 @@ index 506ccb3..862cc36 100644
      { chainId: 570n, shortName: 'sys-rollux' },
      { chainId: 588n, shortName: 'metis-stardust' },
      { chainId: 592n, shortName: 'astr' },
-@@ -111,6 +111,7 @@ exports.networks = [
+@@ -111,6 +112,7 @@ exports.networks = [
      { chainId: 2222n, shortName: 'kava' },
      { chainId: 2331n, shortName: 'rss3-testnet' },
      { chainId: 2358n, shortName: 'kroma-sepolia' },
@@ -19,7 +27,7 @@ index 506ccb3..862cc36 100644
      { chainId: 2810n, shortName: 'hmorph' },
      { chainId: 3636n, shortName: 'BTNX' },
      { chainId: 3737n, shortName: 'csb' },
-@@ -136,6 +137,7 @@ exports.networks = [
+@@ -136,6 +138,7 @@ exports.networks = [
      { chainId: 7171n, shortName: 'bitrock' },
      { chainId: 7332n, shortName: 'EON' },
      { chainId: 7341n, shortName: 'shyft' },
@@ -27,7 +35,7 @@ index 506ccb3..862cc36 100644
      { chainId: 7700n, shortName: 'canto' },
      { chainId: 7771n, shortName: 'tbitrock' },
      { chainId: 8192n, shortName: 'tqf' },
-@@ -216,6 +218,7 @@ exports.networks = [
+@@ -216,6 +219,7 @@ exports.networks = [
      { chainId: 6038361n, shortName: 'azkyt' },
      { chainId: 11155111n, shortName: 'sep' },
      { chainId: 11155420n, shortName: 'opsep' },
