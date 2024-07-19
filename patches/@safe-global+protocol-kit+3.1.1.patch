@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index c22dc1e..1ab785d 100644
+index c22dc1e..7269d19 100644
 --- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 @@ -46,6 +46,7 @@ exports.networks = [
@@ -23,7 +23,7 @@ index c22dc1e..1ab785d 100644
      { chainId: 2222n, shortName: 'kava' },
      { chainId: 2331n, shortName: 'rss3-testnet' },
      { chainId: 2358n, shortName: 'kroma-sepolia' },
-+    { chainId: 2523n, shortName: 'fraxtal-sep' },
++    { chainId: 2522n, shortName: 'fraxtal-testnet' },
      { chainId: 2810n, shortName: 'hmorph' },
      { chainId: 3636n, shortName: 'BTNX' },
      { chainId: 3737n, shortName: 'csb' },
