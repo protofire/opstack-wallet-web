@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index c22dc1e..7269d19 100644
+index c22dc1e..47cf630 100644
 --- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 @@ -46,6 +46,7 @@ exports.networks = [
@@ -19,7 +19,12 @@ index c22dc1e..7269d19 100644
      { chainId: 570n, shortName: 'sys-rollux' },
      { chainId: 588n, shortName: 'metis-stardust' },
      { chainId: 592n, shortName: 'astr' },
-@@ -111,6 +112,7 @@ exports.networks = [
+@@ -107,10 +108,12 @@ exports.networks = [
+     { chainId: 2019n, shortName: 'pmint_test' },
+     { chainId: 2020n, shortName: 'pmint' },
+     { chainId: 2021n, shortName: 'edg' },
++    { chainId: 2192n, shortName: 'snaxchain' },
+     { chainId: 2221n, shortName: 'tkava' },
      { chainId: 2222n, shortName: 'kava' },
      { chainId: 2331n, shortName: 'rss3-testnet' },
      { chainId: 2358n, shortName: 'kroma-sepolia' },
@@ -27,7 +32,7 @@ index c22dc1e..7269d19 100644
      { chainId: 2810n, shortName: 'hmorph' },
      { chainId: 3636n, shortName: 'BTNX' },
      { chainId: 3737n, shortName: 'csb' },
-@@ -136,6 +138,7 @@ exports.networks = [
+@@ -136,6 +139,7 @@ exports.networks = [
      { chainId: 7171n, shortName: 'bitrock' },
      { chainId: 7332n, shortName: 'EON' },
      { chainId: 7341n, shortName: 'shyft' },
@@ -35,7 +40,7 @@ index c22dc1e..7269d19 100644
      { chainId: 7700n, shortName: 'canto' },
      { chainId: 7771n, shortName: 'tbitrock' },
      { chainId: 8192n, shortName: 'tqf' },
-@@ -216,6 +219,7 @@ exports.networks = [
+@@ -216,6 +220,7 @@ exports.networks = [
      { chainId: 6038361n, shortName: 'azkyt' },
      { chainId: 11155111n, shortName: 'sep' },
      { chainId: 11155420n, shortName: 'opsep' },

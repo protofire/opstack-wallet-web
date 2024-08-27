@@ -48,6 +48,7 @@ const ChainLogos = {
   [chains.garnet]: '/images/networks/garnet.png',
   [chains.cyeth]: '/images/networks/cyber.png',
   [chains.cysep]: '/images/networks/cyber.png',
+  [chains.snaxchain]: '/images/networks/snaxchain.png',
 }
 
 export type ExternalChainInfo = Pick<ChainInfo, 'chainId' | 'chainName' | 'shortName' | 'theme'> & {
