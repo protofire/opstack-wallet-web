@@ -1,4 +1,4 @@
-import { EXTERNAL_NETWORKS, getChainLogo } from '@/config/chains'
+import { EXTERNAL_NETWORKS } from '@/config/chains'
 import type { ReactElement } from 'react'
 import { useMemo } from 'react'
 import classnames from 'classnames'
