@@ -1,7 +1,6 @@
 import ChainIndicator from '@/components/common/ChainIndicator'
 import { useDarkMode } from '@/hooks/useDarkMode'
 import { useTheme } from '@mui/material/styles'
-import { type ChainInfo } from '@safe-global/safe-gateway-typescript-sdk'
 import Link from 'next/link'
 import type { SelectChangeEvent } from '@mui/material'
 import { ListSubheader, MenuItem, Select, Skeleton } from '@mui/material'
@@ -16,6 +15,8 @@ import { useCallback } from 'react'
 import { AppRoutes } from '@/config/routes'
 import { trackEvent, OVERVIEW_EVENTS } from '@/services/analytics'
 import useWallet from '@/hooks/wallets/useWallet'
+import { useAppSelector } from '@/store'
+import { selectChains } from '@/store/chainsSlice'
 
 import type { ExternalChainInfo } from '@/config/chains'
 import { EXTERNAL_NETWORKS } from '@/config/chains'
@@ -27,8 +28,8 @@ const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains
   const chainId = useChainId()
   const router = useRouter()
   const isWalletConnected = !!useWallet()
-
   const [testNets, prodNets] = useMemo(() => partition(configs, (config) => config.isTestnet), [configs])
+  const chains = useAppSelector(selectChains)
 
   const getNetworkLink = useCallback(
     (shortName: string) => {
@@ -70,16 +71,18 @@ const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains
   }
 
   const renderMenuItem = useCallback(
-    (value: string, chain: ChainInfo) => {
+    (chainId: string, isSelected: boolean) => {
+      const chain = chains.data.find((chain) => chain.chainId === chainId)
+      if (!chain) return null
       return (
-        <MenuItem key={value} value={value} className={css.menuItem}>
+        <MenuItem key={chainId} value={chainId} sx={{ '&:hover': { backgroundColor: 'inherit' } }}>
           <Link href={getNetworkLink(chain.shortName)} onClick={props.onChainSelect} className={css.item}>
-            <ChainIndicator chainId={chain.chainId} inline />
+            <ChainIndicator responsive={isSelected} chainId={chain.chainId} inline />
           </Link>
         </MenuItem>
       )
     },
-    [getNetworkLink, props.onChainSelect],
+    [chains.data, getNetworkLink, props.onChainSelect],
   )
 
   const renderExternalMenuItem = (value: string, chain: ExternalChainInfo) => {
@@ -100,6 +103,7 @@ const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains
       className={css.select}
       variant="standard"
       IconComponent={ExpandMoreIcon}
+      renderValue={(value) => renderMenuItem(value, true)}
       MenuProps={{
         transitionDuration: 0,
         sx: {
@@ -121,11 +125,11 @@ const NetworkSelector = (props: { onChainSelect?: () => void; showExternalChains
         },
       }}
     >
-      {prodNets.map((chain) => renderMenuItem(chain.chainId, chain))}
+      {prodNets.map((chain) => renderMenuItem(chain.chainId, false))}
 
       <ListSubheader className={css.listSubHeader}>Testnets</ListSubheader>
 
-      {testNets.map((chain) => renderMenuItem(chain.chainId, chain))}
+      {testNets.map((chain) => renderMenuItem(chain.chainId, false))}
 
       {props.showExternalChains ? <ListSubheader className={css.listSubHeader}>safe.global</ListSubheader> : null}
 
