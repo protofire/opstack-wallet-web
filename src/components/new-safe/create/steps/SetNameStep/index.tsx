@@ -114,8 +114,8 @@ function SetNameStep({
             By continuing, you agree to our{' '}
             <Link href={AppRoutes.terms} passHref legacyBehavior>
               <MUILink>terms of use</MUILink>
-            </Link>{' '}
-            and.
+            </Link>
+            .
           </Typography>
 
           <Box sx={{ '&:not(:empty)': { mt: 3 } }}>
