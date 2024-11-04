@@ -14,8 +14,8 @@ const CookiePolicy = () => {
       </p>
       <p>
         This Cookie Policy applies to our website at{' '}
-        <Link href="https://staging.safe.optimism.io" target="_blank" rel="noreferrer">
-          https://staging.safe.optimism.io
+        <Link href="https://safe.optimism.io" target="_blank" rel="noreferrer">
+          https://safe.optimism.io
         </Link>{' '}
         and sets out some further detail on how and why we use these technologies on our website.
       </p>
