@@ -3,7 +3,7 @@ export const AppRoutes = {
   '404': '/404',
   wc: '/wc',
   terms: '/terms',
-  swap: '/swap',
+  swap: '/lifi-swap',
   stake: '/stake',
   privacy: '/privacy',
   licenses: '/licenses',

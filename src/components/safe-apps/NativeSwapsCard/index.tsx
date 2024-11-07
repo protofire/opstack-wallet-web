@@ -33,7 +33,7 @@ const NativeSwapsCard = () => {
 
       <CardContent className={css.content}>
         <Typography className={css.title} variant="h5">
-          Native swaps are here!
+          Swaps are here!
         </Typography>
 
         <Typography className={css.description} variant="body2" color="text.secondary">
