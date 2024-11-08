@@ -4471,16 +4471,34 @@ index 59ff972..65df1a8 100644
          "100": "canonical",
          "137": "canonical",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
-index 89ddef4..b48eb09 100644
+index 89ddef4..5fd88e0 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
-@@ -10,7 +10,8 @@
+@@ -10,7 +10,26 @@
      },
      "networkAddresses": {
          "1": "canonical",
 -        "10": "canonical",
++        "252": "canonical",
 +        "424": "canonical",
-+        "2523": "canonical",
++        "690": "canonical",
++        "34443": "canonical",
++        "7777777": "canonical",
++        "6900": "canonical",
++        "1135": "canonical",
++        "7560": "canonical",
++        "185": "canonical",
++        "2192": "canonical",
++        "11155420": "canonical",
++        "919": "canonical",
++        "999999999": "canonical",
++        "4202": "canonical",
++        "17069": "canonical",
++        "111557560": "canonical",
++        "2522": "canonical",
++        "911911": "canonical",
++        "763373": "canonical",
++        "1946": "canonical",
          "56": "canonical",
          "100": "canonical",
          "137": "canonical",
@@ -9031,16 +9049,34 @@ index 770546e..a3a9740 100644
      "100": "canonical",
      "137": "canonical",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
-index 2b51686..c7c7dd0 100644
+index 2b51686..c79932e 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
-@@ -10,7 +10,8 @@
+@@ -10,7 +10,26 @@
    },
    "networkAddresses": {
      "1": "canonical",
 -    "10": "canonical",
++    "252": "canonical",
 +    "424": "canonical",
-+    "2523": "canonical",
++    "690": "canonical",
++    "34443": "canonical",
++    "7777777": "canonical",
++    "6900": "canonical",
++    "1135": "canonical",
++    "7560": "canonical",
++    "185": "canonical",
++    "2192": "canonical",
++    "11155420": "canonical",
++    "919": "canonical",
++    "999999999": "canonical",
++    "4202": "canonical",
++    "17069": "canonical",
++    "111557560": "canonical",
++    "2522": "canonical",
++    "911911": "canonical",
++    "763373": "canonical",
++    "1946": "canonical",
      "56": "canonical",
      "100": "canonical",
      "137": "canonical",

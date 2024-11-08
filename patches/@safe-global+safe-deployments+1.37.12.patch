@@ -4547,16 +4547,34 @@ index bd0078a..744dc0d 100644
          "81": "canonical",
          "100": "canonical",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
-index 5deb8d6..0efae8b 100644
+index 5deb8d6..baf60e4 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
-@@ -10,7 +10,8 @@
+@@ -10,7 +10,26 @@
      },
      "networkAddresses": {
          "1": "canonical",
 -        "10": "canonical",
++        "252": "canonical",
 +        "424": "canonical",
++        "690": "canonical",
++        "34443": "canonical",
++        "7777777": "canonical",
++        "6900": "canonical",
++        "1135": "canonical",
++        "7560": "canonical",
++        "185": "canonical",
++        "2192": "canonical",
++        "11155420": "canonical",
++        "919": "canonical",
++        "999999999": "canonical",
++        "4202": "canonical",
++        "17069": "canonical",
++        "111557560": "canonical",
 +        "2522": "canonical",
++        "911911": "canonical",
++        "763373": "canonical",
++        "1946": "canonical",
          "56": "canonical",
          "81": "canonical",
          "100": "canonical",
@@ -9152,16 +9170,34 @@ index 5d5552b..1adb2b9 100644
      "81": "canonical",
      "100": "canonical",
 diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
-index f113dc9..d2ead71 100644
+index f113dc9..7753855 100644
 --- a/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.4.1/safe_to_l2_setup.json
-@@ -10,7 +10,8 @@
+@@ -10,7 +10,26 @@
    },
    "networkAddresses": {
      "1": "canonical",
 -    "10": "canonical",
++    "252": "canonical",
 +    "424": "canonical",
++    "690": "canonical",
++    "34443": "canonical",
++    "7777777": "canonical",
++    "6900": "canonical",
++    "1135": "canonical",
++    "7560": "canonical",
++    "185": "canonical",
++    "2192": "canonical",
++    "11155420": "canonical",
++    "919": "canonical",
++    "999999999": "canonical",
++    "4202": "canonical",
++    "17069": "canonical",
++    "111557560": "canonical",
 +    "2522": "canonical",
++    "911911": "canonical",
++    "763373": "canonical",
++    "1946": "canonical",
      "56": "canonical",
      "81": "canonical",
      "100": "canonical",
