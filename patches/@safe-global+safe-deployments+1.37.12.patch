@@ -1,108 +1,108 @@
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-index 4010f9d..8f2654f 100644
+index 4010f9d..6acf4e0 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-index e665ec1..d054626 100644
+index e665ec1..8837497 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-index 9f0776f..75622e1 100644
+index 9f0776f..d34d49a 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-index 09b043f..931baf3 100644
+index 09b043f..3b3b024 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-index 699de2b..574e9ce 100644
+index 699de2b..f61e955 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-index 8ec74b2..8c54c39 100644
+index 8ec74b2..21ef5da 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-index a55c1b4..cdda539 100644
+index a55c1b4..26f77b6 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-index 7f0b053..782c4f6 100644
+index 7f0b053..7e5109b 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-index 32f8218..db28361 100644
+index 32f8218..f62700d 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
 +++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
 @@ -155,6 +155,7 @@
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
          "5165": "canonical",
-+        "5330": ["canonical", "eip155"],
++        "5330": "eip155",
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
