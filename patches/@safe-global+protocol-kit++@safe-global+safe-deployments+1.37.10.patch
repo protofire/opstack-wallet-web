@@ -1,8 +1,16 @@
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-index bd4341d..f54c5b9 100644
+index bd4341d..cb3920a 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -11,7 +19,7 @@ index bd4341d..f54c5b9 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -19,7 +27,7 @@ index bd4341d..f54c5b9 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -28,10 +36,18 @@ index bd4341d..f54c5b9 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-index 0675f78..c59b9aa 100644
+index 0675f78..d63074c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -40,7 +56,7 @@ index 0675f78..c59b9aa 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -48,7 +64,7 @@ index 0675f78..c59b9aa 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -57,10 +73,18 @@ index 0675f78..c59b9aa 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-index bfc9e27..b848bf9 100644
+index bfc9e27..4717acc 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -69,7 +93,7 @@ index bfc9e27..b848bf9 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -77,7 +101,7 @@ index bfc9e27..b848bf9 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -86,10 +110,18 @@ index bfc9e27..b848bf9 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-index 01114ac..d1f47aa 100644
+index 01114ac..bbc25af 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -98,7 +130,7 @@ index 01114ac..d1f47aa 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -106,7 +138,7 @@ index 01114ac..d1f47aa 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -115,10 +147,18 @@ index 01114ac..d1f47aa 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-index 58146b8..907a721 100644
+index 58146b8..b7667b9 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -127,7 +167,7 @@ index 58146b8..907a721 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -135,7 +175,7 @@ index 58146b8..907a721 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -144,10 +184,18 @@ index 58146b8..907a721 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-index 104089b..719b2be 100644
+index 104089b..3fa4b71 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -156,7 +204,7 @@ index 104089b..719b2be 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -164,7 +212,7 @@ index 104089b..719b2be 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -173,10 +221,18 @@ index 104089b..719b2be 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-index d46c162..eb37b7b 100644
+index d46c162..689b453 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -185,7 +241,7 @@ index d46c162..eb37b7b 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -193,7 +249,7 @@ index d46c162..eb37b7b 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -202,10 +258,18 @@ index d46c162..eb37b7b 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-index 7278cc1..24d37a2 100644
+index 7278cc1..f7f29b1 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -214,7 +278,7 @@ index 7278cc1..24d37a2 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -222,7 +286,7 @@ index 7278cc1..24d37a2 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -231,10 +295,18 @@ index 7278cc1..24d37a2 100644
          "808813": "eip155",
          "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-index c272e70..96e00ff 100644
+index c272e70..61d8122 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+         "155": "eip155",
+         "169": "canonical",
+         "179": "eip155",
++        "185": "eip155",
+         "195": "eip155",
+         "196": ["eip155", "canonical"],
+         "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
          "1807": "canonical",
          "1890": "canonical",
          "1891": "canonical",
@@ -243,7 +315,7 @@ index c272e70..96e00ff 100644
          "1984": "canonical",
          "1998": "canonical",
          "2001": "canonical",
-@@ -153,6 +155,7 @@
+@@ -153,6 +156,7 @@
          "5000": ["eip155", "canonical"],
          "5001": "eip155",
          "5003": ["eip155", "canonical"],
@@ -251,7 +323,7 @@ index c272e70..96e00ff 100644
          "5700": ["eip155", "canonical"],
          "6001": "canonical",
          "6102": "eip155",
-@@ -259,6 +262,7 @@
+@@ -259,6 +263,7 @@
          "656476": ["eip155", "canonical"],
          "660279": "canonical",
          "713715": ["eip155", "canonical"],
@@ -623,10 +695,18 @@ index ba24dc0..d6ad942 100644
          "2039": "canonical",
          "2192": "canonical",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
-index d01b905..36c8deb 100644
+index d01b905..eba2924 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -635,7 +715,7 @@ index d01b905..36c8deb 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -644,10 +724,18 @@ index d01b905..36c8deb 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
-index d541e43..397dd82 100644
+index d541e43..e3ecba6 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -656,7 +744,7 @@ index d541e43..397dd82 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -665,10 +753,18 @@ index d541e43..397dd82 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
-index be3d390..c675171 100644
+index be3d390..cac7a39 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -677,7 +773,7 @@ index be3d390..c675171 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -686,10 +782,18 @@ index be3d390..c675171 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
-index 464269f..37d9e86 100644
+index 464269f..4e87f2c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -698,7 +802,7 @@ index 464269f..37d9e86 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -707,10 +811,18 @@ index 464269f..37d9e86 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
-index dff0a86..c1c454f 100644
+index dff0a86..d771bc7 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -719,7 +831,7 @@ index dff0a86..c1c454f 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -728,10 +840,18 @@ index dff0a86..c1c454f 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
-index 0c55f6b..416462a 100644
+index 0c55f6b..57d3130 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -740,7 +860,7 @@ index 0c55f6b..416462a 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -749,10 +869,18 @@ index 0c55f6b..416462a 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
-index 251c624..5cce327 100644
+index 251c624..7e2e94c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -761,7 +889,7 @@ index 251c624..5cce327 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -770,10 +898,18 @@ index 251c624..5cce327 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
-index ed268ad..810df0b 100644
+index ed268ad..d2fae15 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -782,7 +918,7 @@ index ed268ad..810df0b 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
@@ -791,10 +927,18 @@ index ed268ad..810df0b 100644
      "808813": "eip155",
      "810180": "zksync",
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
-index b9cba81..1daacdc 100644
+index b9cba81..709d667 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
-@@ -122,6 +122,8 @@
+@@ -64,6 +64,7 @@
+     "155": "eip155",
+     "169": "canonical",
+     "179": "eip155",
++    "185": "eip155",
+     "195": "eip155",
+     "196": ["eip155", "canonical"],
+     "204": ["eip155", "canonical"],
+@@ -122,6 +123,8 @@
      "1807": "canonical",
      "1890": "canonical",
      "1891": "canonical",
@@ -803,7 +947,7 @@ index b9cba81..1daacdc 100644
      "1984": "canonical",
      "1998": "canonical",
      "2001": "canonical",
-@@ -259,6 +261,7 @@
+@@ -259,6 +262,7 @@
      "656476": ["eip155", "canonical"],
      "660279": "canonical",
      "713715": ["eip155", "canonical"],
