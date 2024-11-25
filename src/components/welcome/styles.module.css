@@ -74,7 +74,7 @@
 }
 
 .content {
-  background: radial-gradient(292.43% 292.43% at -34.98% -34.98%, #FFF 0%, #FBFCFE 47.5%, #BCBFCD 100%);
+  background: radial-gradient(292.43% 292.43% at -34.98% -34.98%, #fff 0%, #fbfcfe 47.5%, #bcbfcd 100%);
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   border-radius: 6px;
