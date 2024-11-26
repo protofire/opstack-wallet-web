@@ -1,6 +1,7 @@
 import { COOKIE_LINK } from '@/config/constants'
 import { Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 const CookiePolicy = () => {
   const [content, setContent] = useState<string>('')
@@ -22,11 +23,7 @@ const CookiePolicy = () => {
 
   return (
     <main>
-      {content ? (
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      ) : (
-        <Typography>Loading cookie policy...</Typography>
-      )}
+      {content ? <ReactMarkdown>{content}</ReactMarkdown> : <Typography>Loading cookie policy...</Typography>}
     </main>
   )
 }

@@ -3,6 +3,7 @@ import { Typography } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 const SafeTerms = () => {
   const [content, setContent] = useState<string>('')
@@ -21,11 +22,7 @@ const SafeTerms = () => {
     fetchContent()
   }, [])
 
-  return (
-    <main>
-      {content ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <Typography>Loading terms...</Typography>}
-    </main>
-  )
+  return <main>{content ? <ReactMarkdown>{content}</ReactMarkdown> : <Typography>Loading terms...</Typography>}</main>
 }
 
 const Terms: NextPage = () => {
