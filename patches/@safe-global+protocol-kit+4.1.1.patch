@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index 00ae69d..3e44900 100644
+index 00ae69d..384e3b9 100644
 --- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 @@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
@@ -13,15 +13,16 @@ index 00ae69d..3e44900 100644
      { chainId: 1n, shortName: 'eth' },
      { chainId: 3n, shortName: 'rop' },
      { chainId: 4n, shortName: 'rin' },
-@@ -113,6 +117,7 @@ exports.networks = [
+@@ -113,6 +117,8 @@ exports.networks = [
      { chainId: 1811n, shortName: 'lif3-testnet' },
      { chainId: 1890n, shortName: 'lightlink_phoenix' },
      { chainId: 1891n, shortName: 'lightlink_pegasus' },
++    { chainId: 1923n, shortName: 'swell-l2' },
 +    { chainId: 1924n, shortName: 'swell-l2-testnet' },
      { chainId: 1984n, shortName: 'euntest' },
      { chainId: 1998n, shortName: 'kyoto-testnet' },
      { chainId: 2000n, shortName: 'dc' },
-@@ -148,6 +153,7 @@ exports.networks = [
+@@ -148,6 +154,7 @@ exports.networks = [
      { chainId: 5000n, shortName: 'mantle' },
      { chainId: 5001n, shortName: 'mantle-testnet' },
      { chainId: 5003n, shortName: 'mnt-sep' },
