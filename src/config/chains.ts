@@ -38,7 +38,7 @@ export const EXTERNAL_NETWORKS: ExternalChainInfo[] = [
   {
     chainId: '10',
     chainName: 'Optimism',
-    chainLogoUri: 'https://safe-transaction-assets.safe.global/chains/10/chain_logo.png',
+    chainLogoUri: 'https://assets.safe.optimism.io/chains/11155420/chain_logo.png',
     shortName: 'oeth',
     theme: {
       textColor: '#ffffff',
