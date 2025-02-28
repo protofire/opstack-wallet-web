@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-index bd4341d..6f2e449 100644
+index bd4341d..f5eab64 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
 @@ -64,6 +64,7 @@
@@ -56,8 +56,20 @@ index bd4341d..6f2e449 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-index 0675f78..5f756c7 100644
+index 0675f78..f158f1c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
 @@ -64,6 +64,7 @@
@@ -114,8 +126,20 @@ index 0675f78..5f756c7 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-index bfc9e27..f775d8d 100644
+index bfc9e27..f553339 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
 @@ -64,6 +64,7 @@
@@ -172,8 +196,20 @@ index bfc9e27..f775d8d 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-index 01114ac..385262e 100644
+index 01114ac..f8c01c1 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
 @@ -64,6 +64,7 @@
@@ -230,8 +266,20 @@ index 01114ac..385262e 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-index 58146b8..ba0f426 100644
+index 58146b8..f03de83 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
 @@ -64,6 +64,7 @@
@@ -288,8 +336,20 @@ index 58146b8..ba0f426 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-index 104089b..5c94f1a 100644
+index 104089b..7eedf10 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
 @@ -64,6 +64,7 @@
@@ -346,8 +406,20 @@ index 104089b..5c94f1a 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-index d46c162..e924cad 100644
+index d46c162..f6feace 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
 @@ -64,6 +64,7 @@
@@ -404,8 +476,20 @@ index d46c162..e924cad 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-index 7278cc1..75760a5 100644
+index 7278cc1..d6ec149 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
 @@ -64,6 +64,7 @@
@@ -462,8 +546,20 @@ index 7278cc1..75760a5 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-index c272e70..2d76a11 100644
+index c272e70..f59697c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
 @@ -64,6 +64,7 @@
@@ -520,8 +616,20 @@ index c272e70..2d76a11 100644
          "12227332": "canonical",
          "94204209": ["canonical", "eip155"],
          "111557560": ["canonical", "eip155"],
+@@ -291,7 +299,10 @@
+         "11297108099": "canonical",
+         "11297108109": "canonical",
+         "37714555429": "canonical",
+-        "88153591557": ["canonical", "eip155"]
++        "88153591557": ["canonical", "eip155"],
++        "146": ["canonical", "eip155"],
++        "130":  ["canonical", "eip155"],
++        "57073":  ["canonical", "eip155"]
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/compatibility_fallback_handler.json
-index c3cfee3..cc914d0 100644
+index c3cfee3..c09b8fb 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/compatibility_fallback_handler.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/compatibility_fallback_handler.json
 @@ -10,6 +10,14 @@
@@ -549,8 +657,20 @@ index c3cfee3..cc914d0 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/create_call.json
-index 6458da5..1b2dd0b 100644
+index 6458da5..694be3c 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/create_call.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/create_call.json
 @@ -10,6 +10,14 @@
@@ -577,8 +697,20 @@ index 6458da5..1b2dd0b 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +156,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send.json
-index b2f7877..24628e2 100644
+index b2f7877..9084c53 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send.json
 @@ -10,6 +10,14 @@
@@ -606,8 +738,20 @@ index b2f7877..24628e2 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send_call_only.json
-index 9dd4882..b84abd8 100644
+index 9dd4882..32ec548 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send_call_only.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/multi_send_call_only.json
 @@ -10,6 +10,14 @@
@@ -635,8 +779,20 @@ index 9dd4882..b84abd8 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe.json
-index 9316e57..0feac10 100644
+index 9316e57..056f876 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe.json
 @@ -10,6 +10,14 @@
@@ -664,8 +820,20 @@ index 9316e57..0feac10 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_l2.json
-index 331dba8..e159259 100644
+index 331dba8..1756fa8 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_l2.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_l2.json
 @@ -10,6 +10,14 @@
@@ -693,8 +861,20 @@ index 331dba8..e159259 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
-index fca843f..44d065e 100644
+index fca843f..1482712 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
 @@ -10,6 +10,27 @@
@@ -735,8 +915,20 @@ index fca843f..44d065e 100644
          "5000": "canonical",
          "8453": "canonical",
          "42161": "canonical",
+@@ -27,7 +51,10 @@
+         "84532": "canonical",
+         "534352": "canonical",
+         "11155111": "canonical",
+-        "1313161554": "canonical"
++        "1313161554": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json
-index c101c22..74358dd 100644
+index c101c22..bcfec85 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json
 @@ -10,6 +10,14 @@
@@ -764,8 +956,20 @@ index c101c22..74358dd 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
-index 59ff972..0eab0f7 100644
+index 59ff972..d5d9735 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
 @@ -10,6 +10,27 @@
@@ -807,8 +1011,20 @@ index 59ff972..0eab0f7 100644
          "8453": "canonical",
          "42161": "canonical",
          "42220": "canonical",
+@@ -27,7 +51,10 @@
+         "84532": "canonical",
+         "534352": "canonical",
+         "11155111": "canonical",
+-        "1313161554": "canonical"
++        "1313161554": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
-index 89ddef4..39491c0 100644
+index 89ddef4..0738898 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
 @@ -10,6 +10,27 @@
@@ -849,8 +1065,20 @@ index 89ddef4..39491c0 100644
          "5000": "canonical",
          "8453": "canonical",
          "42161": "canonical",
+@@ -27,7 +51,10 @@
+         "84532": "canonical",
+         "534352": "canonical",
+         "11155111": "canonical",
+-        "1313161554": "canonical"
++        "1313161554": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json
-index 6490997..7aa52c7 100644
+index 6490997..6704f32 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json
 @@ -10,6 +10,14 @@
@@ -878,8 +1106,20 @@ index 6490997..7aa52c7 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/simulate_tx_accessor.json
-index ba24dc0..b45b6e6 100644
+index ba24dc0..dc727c8 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/simulate_tx_accessor.json
 +++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/simulate_tx_accessor.json
 @@ -10,6 +10,14 @@
@@ -907,6 +1147,18 @@ index ba24dc0..b45b6e6 100644
          "2000": "canonical",
          "2039": "canonical",
          "2192": "canonical",
+@@ -146,7 +157,10 @@
+         "1666600000": "canonical",
+         "1666700000": "canonical",
+         "88153591557": "canonical",
+-        "123420000220": "canonical"
++        "123420000220": "canonical",
++        "146":  "canonical",
++        "130":  "canonical",
++        "57073":  "canonical"
+     },
+     "abi": [
+         {
 diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
 index d01b905..caa2ad9 100644
 --- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
