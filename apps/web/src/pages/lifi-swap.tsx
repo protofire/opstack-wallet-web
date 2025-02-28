@@ -4,22 +4,22 @@ import Head from 'next/head'
 // import { Typography } from '@mui/material'
 // import { useHasFeature } from '@/hooks/useChains'
 // import { FEATURES } from '@/utils/chains'
-import { useRouter } from 'next/router'
+//import { useRouter } from 'next/router'
 
 //const LifiSwapWidgetNoSSR = dynamic(() => import('@/features/lifi'), { ssr: false })
 
 const LifiSwapPage: NextPage = () => {
-  const router = useRouter()
-  const { token, amount } = router.query
+  //const router = useRouter()
+  //const { token, amount } = router.query
   //const isFeatureEnabled = useHasFeature(FEATURES.NATIVE_SWAPS_LIFI)
 
-  let sell = undefined
-  if (token && amount) {
-    sell = {
-      asset: token as string,
-      amount: amount as string,
-    }
-  }
+  // let sell = undefined
+  // if (token && amount) {
+  //   sell = {
+  //     asset: token as string,
+  //     amount: amount as string,
+  //   }
+  // }
 
   return (
     <>

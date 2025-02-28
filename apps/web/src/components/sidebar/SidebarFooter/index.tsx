@@ -1,12 +1,12 @@
 import type { ReactElement } from 'react'
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 import {
   SidebarList,
   SidebarListItemButton,
   SidebarListItemIcon,
   SidebarListItemText,
 } from '@/components/sidebar/SidebarList'
-import { BEAMER_SELECTOR, loadBeamer } from '@/services/beamer'
+import { BEAMER_SELECTOR } from '@/services/beamer'
 // import { useAppDispatch, useAppSelector } from '@/store'
 // import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
 // import { openCookieBanner } from '@/store/popupSlice'
