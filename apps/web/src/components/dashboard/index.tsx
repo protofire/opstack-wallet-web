@@ -15,15 +15,14 @@ import { FEATURES } from '@/utils/chains'
 import css from './styles.module.css'
 import { InconsistentSignerSetupWarning } from '@/features/multichain/components/SignerSetupWarning/InconsistentSignerSetupWarning'
 import useIsStakingBannerEnabled from '@/features/stake/hooks/useIsStakingBannerEnabled'
-import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
-import SwapWidget from '@/features/swap/components/SwapWidget'
+//import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
 
 const RecoveryHeader = dynamic(() => import('@/features/recovery/components/RecoveryHeader'))
 
 const Dashboard = (): ReactElement => {
   const { safe } = useSafeInfo()
   const showSafeApps = useHasFeature(FEATURES.SAFE_APPS)
-  const isSwapFeatureEnabled = useIsSwapFeatureEnabled()
+  //const isSwapFeatureEnabled = useIsSwapFeatureEnabled()
   const isStakingBannerEnabled = useIsStakingBannerEnabled()
   const supportsRecovery = useIsRecoverySupported()
 
@@ -46,11 +45,11 @@ const Dashboard = (): ReactElement => {
 
         {safe.deployed && (
           <>
-            {isSwapFeatureEnabled && (
+            {/* {isSwapFeatureEnabled && (
               <Grid item xs={12} xl={12} className={css.hideIfEmpty}>
                 <SwapWidget />
               </Grid>
-            )}
+            )} */}
 
             {isStakingBannerEnabled && (
               <Grid item xs={12} className={css.hideIfEmpty}>

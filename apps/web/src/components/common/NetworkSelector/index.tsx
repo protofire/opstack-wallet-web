@@ -45,6 +45,19 @@ import { selectUndeployedSafe } from '@/store/slices'
 import { skipToken } from '@reduxjs/toolkit/query'
 import { hasMultiChainAddNetworkFeature } from '@/features/multichain/utils/utils'
 
+// Add the missing type definition
+type ExternalChainInfo = {
+  chainId: string
+  externalHref: string
+}
+
+// Add the missing constant
+const EXTERNAL_NETWORKS: ExternalChainInfo[] = [
+  // You may need to populate this with actual external networks
+  // Example:
+  // { chainId: 'eth', externalHref: 'https://safe.global/eth' }
+]
+
 const ChainIndicatorWithFiatBalance = ({
   isSelected,
   chain,
