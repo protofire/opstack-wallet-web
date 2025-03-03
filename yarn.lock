@@ -7659,6 +7659,7 @@ __metadata:
     react-dropzone: "npm:^14.2.3"
     react-gtm-module: "npm:^2.0.11"
     react-hook-form: "npm:7.41.1"
+    react-markdown: "npm:^10.0.1"
     react-papaparse: "npm:^4.0.2"
     react-redux: "npm:^9.1.2"
     remark-frontmatter: "npm:^5.0.0"
@@ -26210,6 +26211,28 @@ __metadata:
     "@types/react": ">=18"
     react: ">=18"
   checksum: 10/71ce31f200982f641d363888a26e8fb52a199a589124f20295e9be870fa3aed26fcfa14d1dc766d83df666a15cb82359291bfda207bd55d5728ff376d217e079
+  languageName: node
+  linkType: hard
+
+"react-markdown@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "react-markdown@npm:10.0.1"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    "@types/mdast": "npm:^4.0.0"
+    devlop: "npm:^1.0.0"
+    hast-util-to-jsx-runtime: "npm:^2.0.0"
+    html-url-attributes: "npm:^3.0.0"
+    mdast-util-to-hast: "npm:^13.0.0"
+    remark-parse: "npm:^11.0.0"
+    remark-rehype: "npm:^11.0.0"
+    unified: "npm:^11.0.0"
+    unist-util-visit: "npm:^5.0.0"
+    vfile: "npm:^6.0.0"
+  peerDependencies:
+    "@types/react": ">=18"
+    react: ">=18"
+  checksum: 10/a5f6ac169c7034231c01e3e31abeed2c8ca714c4d4fd38faf6ff7bea7d868d42aadb904031f3cc0d7c16bf5e6377b689ab93bbf6e39c35224502003b76696a4d
   languageName: node
   linkType: hard
 
