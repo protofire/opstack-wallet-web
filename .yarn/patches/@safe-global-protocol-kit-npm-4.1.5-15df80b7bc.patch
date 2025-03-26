@@ -1,8 +1,16 @@
 diff --git a/dist/src/utils/eip-3770/config.js b/dist/src/utils/eip-3770/config.js
-index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..5b5f5fc76e7b36a6c0789a9b835a460a0e74d9e0 100644
+index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..f62598da9b3a9fa735144a2cc0d8e5cb8d00b9d9 100644
 --- a/dist/src/utils/eip-3770/config.js
 +++ b/dist/src/utils/eip-3770/config.js
-@@ -51,6 +51,14 @@ exports.networks = [
+@@ -12,6 +12,7 @@ exports.networks = [
+     { chainId: 12n, shortName: 'kal' },
+     { chainId: 14n, shortName: 'flr' },
+     { chainId: 16n, shortName: 'cflr' },
++    { chainId: 695569n, shortName: 'pyrope' },
+     { chainId: 18n, shortName: 'tst' },
+     { chainId: 19n, shortName: 'sgb' },
+     { chainId: 25n, shortName: 'cro' },
+@@ -51,6 +52,14 @@ exports.networks = [
      { chainId: 133n, shortName: 'HSKT' },
      { chainId: 137n, shortName: 'matic' },
      { chainId: 146n, shortName: 'sonic' },
