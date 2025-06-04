@@ -67,7 +67,7 @@ const NewSafe = () => {
 
             <ul className={css.bulletList}>
               <BulletListItem text="Stealth security with multiple signers" />
-              <BulletListItem text="Create safes seamlessly across OP Chains" />
+              <BulletListItem text="Create safes seamlessly across Superchain" />
               <BulletListItem text="Make it yours with modules, guards and ecosystem apps" />
             </ul>
           </div>
