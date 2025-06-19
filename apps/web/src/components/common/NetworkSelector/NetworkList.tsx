@@ -1,6 +1,6 @@
 import useChains from '@/hooks/useChains'
 import { type ReactElement } from 'react'
-import { Chip, Box } from '@mui/material'
+import { Chip, Box, Typography } from '@mui/material'
 import ChainIndicator from '../ChainIndicator'
 import css from './styles.module.css'
 
@@ -8,20 +8,17 @@ const NetworkList = (): ReactElement => {
   const { configs } = useChains()
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 1,
-      }}
-    >
+    <Box>
       {configs
         .slice()
         .sort((a, b) => Number(a.isTestnet) - Number(b.isTestnet))
         .map((c) => (
           <Chip
             key={c.chainId}
-            sx={{ color: 'black' }}
+            sx={({ palette }) => ({
+              color: palette.logo.main,
+              bgcolor: palette.background.default,
+            })}
             variant="outlined"
             avatar={<ChainIndicator chainId={c.chainId} onlyLogo inline />}
             label={c.chainName}
