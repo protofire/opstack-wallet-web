@@ -1,39 +1,18 @@
 diff --git a/dist/src/utils/eip-3770/config.js b/dist/src/utils/eip-3770/config.js
-index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..f62598da9b3a9fa735144a2cc0d8e5cb8d00b9d9 100644
+index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..771c9f22571c135d26e93ed8eee27f4a959202ba 100644
 --- a/dist/src/utils/eip-3770/config.js
 +++ b/dist/src/utils/eip-3770/config.js
-@@ -12,6 +12,7 @@ exports.networks = [
-     { chainId: 12n, shortName: 'kal' },
-     { chainId: 14n, shortName: 'flr' },
-     { chainId: 16n, shortName: 'cflr' },
-+    { chainId: 695569n, shortName: 'pyrope' },
-     { chainId: 18n, shortName: 'tst' },
-     { chainId: 19n, shortName: 'sgb' },
-     { chainId: 25n, shortName: 'cro' },
-@@ -51,6 +52,14 @@ exports.networks = [
-     { chainId: 133n, shortName: 'HSKT' },
-     { chainId: 137n, shortName: 'matic' },
-     { chainId: 146n, shortName: 'sonic' },
+@@ -57,6 +57,13 @@ exports.networks = [
+     { chainId: 177n, shortName: 'hsk' },
+     { chainId: 179n, shortName: 'abey' },
+     { chainId: 181n, shortName: 'water' },
 +    { chainId: 185n, shortName: 'mint' },
++    { chainId: 1868n, shortName: 'soneium' },
 +    { chainId: 1946n, shortName: 'minato' },
 +    { chainId: 2522n, shortName: 'fraxtal-testnet' },
-+    { chainId: 763373n, shortName: 'ink-sepolia' },
-+    { chainId: 1868n, shortName: 'soneium' },
-+    { chainId: 1923n, shortName: 'swell-l2' },
-+    { chainId: 1924n, shortName: 'swell-l2-testnet' },
 +    { chainId: 5330n, shortName: 'superseed' },
-     { chainId: 148n, shortName: 'shimmerevm' },
-     { chainId: 155n, shortName: 'tenet-testnet' },
-     { chainId: 169n, shortName: 'manta' },
-diff --git a/dist/src/utils/eip-3770/config.js b/dist/src/utils/eip-3770/config.js
-index f62598da9b3a9fa735144a2cc0d8e5cb8d00b9d9..81f1b47ad75b2d69c7933b282464a238a476ca24 100644
---- a/dist/src/utils/eip-3770/config.js
-+++ b/dist/src/utils/eip-3770/config.js
-@@ -204,6 +204,7 @@ exports.networks = [
-     { chainId: 7560n, shortName: 'cyeth' },
-     { chainId: 7700n, shortName: 'canto' },
-     { chainId: 7771n, shortName: 'tbitrock' },
 +    { chainId: 7897n, shortName: 'arena-z' },
-     { chainId: 8192n, shortName: 'tqf' },
-     { chainId: 8194n, shortName: 'ttqf' },
-     { chainId: 8217n, shortName: 'cypress' },
++    { chainId: 695569n, shortName: 'pyrope' },
+     { chainId: 195n, shortName: 'tokb' },
+     { chainId: 196n, shortName: 'okb' },
+     { chainId: 204n, shortName: 'opbnb' },
