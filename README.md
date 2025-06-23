@@ -160,18 +160,3 @@ yarn install
 
 If you have any questions or run into issues, feel free to open a discussion or contact the maintainers. Happy coding!
 🚀
-
-
-## Patching safe-deployments:
-
-```bash
-yarn patch @safe-global/safe-deployments -u
-```
-
-Then update the chains, but both in src and dist folders
-
-Then:
-
-```bash
-yarn patch-commit /path/to/patched/folder -s
-```
