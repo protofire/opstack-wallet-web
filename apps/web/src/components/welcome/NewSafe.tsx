@@ -71,8 +71,8 @@ const NewSafe = () => {
               <BulletListItem text="Create safes seamlessly across Superchain" />
               <BulletListItem text="Make it yours with modules, guards and ecosystem apps" />
               <BulletListItem text="Available at these networks:" />
+              <NetworkList />
             </ul>
-            <NetworkList />
           </div>
         </Grid>
       </Grid>
