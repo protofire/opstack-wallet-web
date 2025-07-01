@@ -4,6 +4,7 @@ import css from './styles.module.css'
 import CheckFilled from '@/public/images/common/check-filled.svg'
 
 import WelcomeLogin from './WelcomeLogin'
+import NetworkList from '../common/NetworkSelector/NetworkList'
 
 const BulletListItem = ({ text }: { text: string }) => (
   <li>
@@ -69,6 +70,8 @@ const NewSafe = () => {
               <BulletListItem text="Stealth security with multiple signers" />
               <BulletListItem text="Create safes seamlessly across Superchain" />
               <BulletListItem text="Make it yours with modules, guards and ecosystem apps" />
+              <BulletListItem text="Available at these networks:" />
+              <NetworkList />
             </ul>
           </div>
         </Grid>
