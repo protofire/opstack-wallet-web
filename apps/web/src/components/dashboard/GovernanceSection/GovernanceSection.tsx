@@ -8,8 +8,6 @@ import { DISCORD_URL, SafeAppsTag } from '@/config/constants'
 import { useDarkMode } from '@/hooks/useDarkMode'
 import { OpenInNew } from '@mui/icons-material'
 import NetworkError from '@/public/images/common/network-error.svg'
-import useChainId from '@/hooks/useChainId'
-import { getSafeTokenAddress } from '@/components/common/SafeTokenWidget'
 import SafeAppIframe from '@/components/safe-apps/AppFrame/SafeAppIframe'
 import type { UseAppCommunicatorHandlers } from '@/components/safe-apps/AppFrame/useAppCommunicator'
 import useAppCommunicator from '@/components/safe-apps/AppFrame/useAppCommunicator'
@@ -188,8 +186,7 @@ const LazyGovernanceSection = () => {
 
 // Prevent `GovernanceSection` hooks from needlessly being called
 const GovernanceSectionWrapper = () => {
-  const chainId = useChainId()
-  if (!getSafeTokenAddress(chainId)) {
+  if (true) {
     return null
   }
   return <LazyGovernanceSection />
