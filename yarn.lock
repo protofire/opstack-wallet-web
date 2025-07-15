@@ -7475,21 +7475,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@safe-global/safe-deployments@npm:1.37.37":
-  version: 1.37.37
-  resolution: "@safe-global/safe-deployments@npm:1.37.37"
+"@safe-global/safe-deployments@npm:1.37.36":
+  version: 1.37.36
+  resolution: "@safe-global/safe-deployments@npm:1.37.36"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/8fc068ea4dca5dfdf3ebe63fe99400a248239e7400f05467df0269cafef7c2e114baaf034b06958e75a29c9673e0dc3bf37e7af797e393dd4db1aa9db91ecfdb
+  checksum: 10/d8f9447353e65009ccb9a09753f79e4d2390926783c3d056979ede875a500ee4d53829cad82996cd1c6ad622a9806842ea99b2a720abe0fe55034b34137e65c3
   languageName: node
   linkType: hard
 
-"@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.37#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.37-52b18f6c3e.patch":
-  version: 1.37.37
-  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.37#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.37-52b18f6c3e.patch::version=1.37.37&hash=53035a"
+"@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch":
+  version: 1.37.36
+  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch::version=1.37.36&hash=a5cf4d"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/d159a7ad3cf37769b950899c72ca54b8fb25e2de2f9f75dfc5b3b8a8f614ea3ac3ea762cbc1a1ddff5fb9a4e3de712e0bb72d0b0a224af8c259b6ae053b7ae69
+  checksum: 10/152da6ff073bbc577229d0a691e101e34a363d248a17d57a4516798743a2f2a8220b1e6731b2a49e9f96108cd127415f67e46722dd2c5a551dd71ee60d0fd66d
   languageName: node
   linkType: hard
 
@@ -7593,7 +7593,7 @@ __metadata:
     "@safe-global/safe-apps-sdk": "npm:^9.1.0"
     "@safe-global/safe-client-gateway-sdk": "npm:v1.60.1"
     "@safe-global/safe-core-sdk-types": "npm:^5.0.1"
-    "@safe-global/safe-deployments": "patch:@safe-global/safe-deployments@npm%3A1.37.37#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.37-52b18f6c3e.patch"
+    "@safe-global/safe-deployments": "patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch"
     "@safe-global/safe-gateway-typescript-sdk": "npm:3.22.7"
     "@safe-global/safe-modules-deployments": "npm:^2.2.6"
     "@safe-global/store": "workspace:^"
