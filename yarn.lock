@@ -7484,6 +7484,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch":
+  version: 1.37.36
+  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch::version=1.37.36&hash=a5cf4d"
+  dependencies:
+    semver: "npm:^7.6.2"
+  checksum: 10/152da6ff073bbc577229d0a691e101e34a363d248a17d57a4516798743a2f2a8220b1e6731b2a49e9f96108cd127415f67e46722dd2c5a551dd71ee60d0fd66d
+  languageName: node
+  linkType: hard
+
 "@safe-global/safe-gateway-typescript-sdk@npm:3.22.7, @safe-global/safe-gateway-typescript-sdk@npm:^3.5.3":
   version: 3.22.7
   resolution: "@safe-global/safe-gateway-typescript-sdk@npm:3.22.7"
