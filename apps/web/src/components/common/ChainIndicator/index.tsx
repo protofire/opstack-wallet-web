@@ -81,6 +81,7 @@ const ChainIndicator = ({
           width={24}
           height={24}
           loading="lazy"
+          style={{ borderRadius: '50%' }}
         />
       )}
       {!onlyLogo && (
