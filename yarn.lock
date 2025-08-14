@@ -7433,7 +7433,7 @@ __metadata:
 
 "@safe-global/protocol-kit@patch:@safe-global/protocol-kit@npm%3A4.1.5#~/.yarn/patches/@safe-global-protocol-kit-npm-4.1.5-15df80b7bc.patch":
   version: 4.1.5
-  resolution: "@safe-global/protocol-kit@patch:@safe-global/protocol-kit@npm%3A4.1.5#~/.yarn/patches/@safe-global-protocol-kit-npm-4.1.5-15df80b7bc.patch::version=4.1.5&hash=a8570d"
+  resolution: "@safe-global/protocol-kit@patch:@safe-global/protocol-kit@npm%3A4.1.5#~/.yarn/patches/@safe-global-protocol-kit-npm-4.1.5-15df80b7bc.patch::version=4.1.5&hash=b0e243"
   dependencies:
     "@noble/hashes": "npm:^1.3.3"
     "@safe-global/safe-core-sdk-types": "npm:^5.1.0"
@@ -7443,7 +7443,7 @@ __metadata:
     ethereumjs-util: "npm:^7.1.5"
     ethers: "npm:^6.13.1"
     semver: "npm:^7.6.2"
-  checksum: 10/3ff4002e1e1c2a260de2b9fea191476e904385152eb5155e3050bac62b0dd89985c05bee7eefca0c99068c1f3c2ccea2a8940d66b8cb81d933a6b4fd9e7b27df
+  checksum: 10/fbc9416952810783e7fba01e00170fcd4ffe911d5e689ffc7a31368a561b8505a9ccb25a511431830bedd729e4297889cb349a43e2e608cbb301e4442e5966e8
   languageName: node
   linkType: hard
 
@@ -7486,10 +7486,10 @@ __metadata:
 
 "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch":
   version: 1.37.36
-  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch::version=1.37.36&hash=a5cf4d"
+  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.36#~/.yarn/patches/@safe-global-safe-deployments-npm-1.37.36-7beb5df7ca.patch::version=1.37.36&hash=1159a8"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/152da6ff073bbc577229d0a691e101e34a363d248a17d57a4516798743a2f2a8220b1e6731b2a49e9f96108cd127415f67e46722dd2c5a551dd71ee60d0fd66d
+  checksum: 10/7f21f158287572f84398da9545a121b75c9b229a35f793ac886a5e7bc1c21b988612afcc4c33a9fadcd838b6457961c0fc151beaecfb8a6bfccee2ec40d8ee62
   languageName: node
   linkType: hard
 
