@@ -16,6 +16,7 @@ import { FEATURES } from '@safe-global/utils/utils/chains'
 import { UnsupportedMastercopyWarning } from '@/features/multichain/components/UnsupportedMastercopyWarning/UnsupportedMasterCopyWarning'
 import NewsDisclaimers from './NewsCarousel/NewsDisclaimers'
 import StakingBanner from './StakingBanner'
+import { SunsetWarning } from '@/features/warningBanner/SunsetWarning'
 //import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
 
 const RecoveryHeader = dynamic(() => import('@/features/recovery/components/RecoveryHeader'))
@@ -35,7 +36,9 @@ const Dashboard = (): ReactElement => {
         <Grid item xs={12} className={css.hideIfEmpty} sx={{ '& > div': { m: 0 } }}>
           <InconsistentSignerSetupWarning />
         </Grid>
-
+        <Grid item xs={12}>
+          <SunsetWarning />
+        </Grid>
         <Grid item xs={12} className={css.hideIfEmpty}>
           <UnsupportedMastercopyWarning />
         </Grid>
