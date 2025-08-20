@@ -19,10 +19,11 @@ type ChainIndicatorProps = {
   onlyLogo?: boolean
   responsive?: boolean
   fiatValue?: string
+  imageSize?: number
 }
 
 const fallbackChainConfig = {
-  chainName: 'Unknown chain',
+  chainName: 'Unknown network',
   chainId: '-1',
   theme: {
     backgroundColor: '#ddd',
@@ -40,6 +41,7 @@ const ChainIndicator = ({
   showLogo = true,
   responsive = false,
   onlyLogo = false,
+  // imageSize = 24,
 }: ChainIndicatorProps): ReactElement | null => {
   const currentChainId = useChainId()
   const id = chainId || currentChainId
@@ -59,6 +61,27 @@ const ChainIndicator = ({
       color: theme.textColor,
     }
   }, [chainConfig])
+
+  // const logoComponent = chainConfig?.chainLogoUri ? (
+  //   <img
+  //     src={chainConfig.chainLogoUri ?? undefined}
+  //     alt={`${chainConfig.chainName} Logo`}
+  //     width={imageSize}
+  //     height={imageSize}
+  //     loading="lazy"
+  //   />
+  // ) : (
+  //   <SvgIcon
+  //     component={UnknownChainIcon}
+  //     inheritViewBox
+  //     sx={{
+  //       height: imageSize,
+  //       width: imageSize,
+  //       backgroundColor: (theme) => theme.palette.background.main,
+  //       borderRadius: '100%',
+  //     }}
+  //   />
+  // )
 
   return noChains ? (
     <Skeleton width="100%" height="22px" variant="rectangular" sx={{ flexShrink: 0 }} />

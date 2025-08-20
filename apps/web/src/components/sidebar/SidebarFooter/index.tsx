@@ -1,18 +1,13 @@
 import type { ReactElement } from 'react'
 //import { useEffect } from 'react'
-import {
-  SidebarList,
-  SidebarListItemButton,
-  SidebarListItemIcon,
-  SidebarListItemText,
-} from '@/components/sidebar/SidebarList'
+import { SidebarListItemButton, SidebarListItemIcon, SidebarListItemText } from '@/components/sidebar/SidebarList'
 import { BEAMER_SELECTOR } from '@/services/beamer'
 // import { useAppDispatch, useAppSelector } from '@/store'
 // import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
 // import { openCookieBanner } from '@/store/popupSlice'
 // import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
 import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
-import { Link, ListItem, SvgIcon, Typography } from '@mui/material'
+import { Divider, Link, ListItem, SvgIcon, Typography } from '@mui/material'
 import DebugToggle from '../DebugToggle'
 import { HELP_CENTER_URL, IS_PRODUCTION, NEW_SUGGESTION_FORM } from '@/config/constants'
 import Track from '@/components/common/Track'
@@ -44,11 +39,15 @@ const SidebarFooter = (): ReactElement => {
   // }
 
   return (
-    <SidebarList>
+    <>
       {!IS_PRODUCTION && (
-        <ListItem disablePadding>
-          <DebugToggle />
-        </ListItem>
+        <>
+          <ListItem disablePadding>
+            <DebugToggle />
+          </ListItem>
+
+          <Divider flexItem />
+        </>
       )}
 
       {/* <Track {...OVERVIEW_EVENTS.WHATS_NEW}>
@@ -110,7 +109,7 @@ const SidebarFooter = (): ReactElement => {
           </Typography>
         </SidebarListItemText>
       </ListItem>
-    </SidebarList>
+    </>
   )
 }
 
