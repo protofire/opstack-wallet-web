@@ -1,18 +1,12 @@
 diff --git a/dist/src/utils/eip-3770/config.js b/dist/src/utils/eip-3770/config.js
-index 4937a8edcfb3981d3974d2a0fa9bafdb92cde131..5329bbbe568cb0623024817f9cb83c71f6b39526 100644
+index 09d831da880738f9f92318a1b8944232f773caf7..156ab472da26fbad05130895bdc7c3c78167cf91 100644
 --- a/dist/src/utils/eip-3770/config.js
 +++ b/dist/src/utils/eip-3770/config.js
-@@ -3,6 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
+@@ -3,6 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  exports.networks = void 0;
  // https://github.com/ethereum-lists/chains/tree/master/_data/chains
  exports.networks = [
-+    { chainId: 185n, shortName: 'mint' },
-+    { chainId: 1868n, shortName: 'soneium' },
-+    { chainId: 1946n, shortName: 'minato' },
 +    { chainId: 2522n, shortName: 'fraxtal-testnet' },
-+    { chainId: 5330n, shortName: 'superseed' },
-+    { chainId: 7897n, shortName: 'arena-z' },
-+    { chainId: 695569n, shortName: 'pyrope' },
 +    { chainId: 8008n, shortName: 'polynomial' },
 +    { chainId: 80008n, shortName: 'polynomialSepolia' },
      { chainId: 1n, shortName: 'eth' },
