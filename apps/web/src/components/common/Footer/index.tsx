@@ -80,6 +80,9 @@ const Footer = (): ReactElement | null => {
         ) : null}
 
         <li>
+          <Typography variant="caption">&copy;{new Date().getFullYear()} Superchain Safe</Typography>
+        </li>
+        <li>
           <ExternalLink noIcon href="https://www.optimism.io/about">
             Optimism
           </ExternalLink>

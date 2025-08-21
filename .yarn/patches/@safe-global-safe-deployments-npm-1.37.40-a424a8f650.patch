@@ -209,16 +209,17 @@ index 3c349b476b376fbbfd2cfc6836715e6019c87546..e9b203c3488e32e91bc9bc6ecb59f840
          "5": "canonical",
          "10": "canonical",
 diff --git a/dist/assets/v1.4.1/safe_migration.json b/dist/assets/v1.4.1/safe_migration.json
-index ae7d18e8c98df9aacc15126eda3ff6e43a558dcc..110a2c25b7b325b82c57664b3565b27209e56eac 100644
+index ae7d18e8c98df9aacc15126eda3ff6e43a558dcc..203cd7057e7370b1ec9277373058ed0cf2a5f379 100644
 --- a/dist/assets/v1.4.1/safe_migration.json
 +++ b/dist/assets/v1.4.1/safe_migration.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
          }
      },
      "networkAddresses": {
 +        "2522": "canonical",
 +        "8008": "canonical",
 +        "80008": "canonical",
++        "17069": "canonical",
          "1": "canonical",
          "10": "canonical",
          "14": "canonical",
@@ -237,30 +238,32 @@ index 9e1438982037dfcd617c9660b48482dfbd873a78..3dd66f7a04fce4455026f73ec1681674
          "5": "canonical",
          "10": "canonical",
 diff --git a/dist/assets/v1.4.1/safe_to_l2_migration.json b/dist/assets/v1.4.1/safe_to_l2_migration.json
-index bc9cc48e607ace40d7ad547156821e0aa144d7bf..1a2f057317649559d01fd21cd946430f79857614 100644
+index bc9cc48e607ace40d7ad547156821e0aa144d7bf..a0fc718b29b8fbf25199079941fb32c750fb6a3b 100644
 --- a/dist/assets/v1.4.1/safe_to_l2_migration.json
 +++ b/dist/assets/v1.4.1/safe_to_l2_migration.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
          }
      },
      "networkAddresses": {
 +        "2522": "canonical",
 +        "8008": "canonical",
 +        "80008": "canonical",
++        "17069": "canonical",
          "1": "canonical",
          "10": "canonical",
          "14": "canonical",
 diff --git a/dist/assets/v1.4.1/safe_to_l2_setup.json b/dist/assets/v1.4.1/safe_to_l2_setup.json
-index 051297ed887ef6d061f7f811fba3a9c18f980c0f..90da80e138d0fde27cea6304f7e566a389b83993 100644
+index 051297ed887ef6d061f7f811fba3a9c18f980c0f..797856559d63dd61232fe682c5cd6e852f09bcbc 100644
 --- a/dist/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/dist/assets/v1.4.1/safe_to_l2_setup.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
          }
      },
      "networkAddresses": {
 +        "2522": "canonical",
 +        "8008": "canonical",
 +        "80008": "canonical",
++        "17069": "canonical",
          "1": "canonical",
          "10": "canonical",
          "14": "canonical",
@@ -521,16 +524,17 @@ index 8ed97ba60898b568858841cc018d8f0cd128d78e..185fb5d3a1ad49b16b870b9360013a2d
      "5": "canonical",
      "10": "canonical",
 diff --git a/src/assets/v1.4.1/safe_migration.json b/src/assets/v1.4.1/safe_migration.json
-index 0fb624058a6eca21d8f8dc91c3e048423b5d1fba..b0fbf320ec99cf9f74bac29bce5eb44b9bec22c4 100644
+index 0fb624058a6eca21d8f8dc91c3e048423b5d1fba..5b75e59519a96a044c7a0e56a341f8d03d8594ae 100644
 --- a/src/assets/v1.4.1/safe_migration.json
 +++ b/src/assets/v1.4.1/safe_migration.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
      }
    },
    "networkAddresses": {
 +    "2522": "canonical",
 +    "8008": "canonical",
 +    "80008": "canonical",
++    "17069": "canonical",
      "1": "canonical",
      "10": "canonical",
      "14": "canonical",
@@ -549,30 +553,32 @@ index 2d7792094f00319a88e20dca7a2596be27f540f4..0a9d9649faea50e174a6afa05deee17d
      "5": "canonical",
      "10": "canonical",
 diff --git a/src/assets/v1.4.1/safe_to_l2_migration.json b/src/assets/v1.4.1/safe_to_l2_migration.json
-index d32db2eacab0c16f1251ac881f4caf470856b3b0..fe191465950e1f1583e7ae78550e2886812c7fc7 100644
+index d32db2eacab0c16f1251ac881f4caf470856b3b0..f6f2d9aeca5db7e67c28edc824c76e465cf1b17c 100644
 --- a/src/assets/v1.4.1/safe_to_l2_migration.json
 +++ b/src/assets/v1.4.1/safe_to_l2_migration.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
      }
    },
    "networkAddresses": {
 +    "2522": "canonical",
 +    "8008": "canonical",
 +    "80008": "canonical",
++    "17069": "canonical",
      "1": "canonical",
      "10": "canonical",
      "14": "canonical",
 diff --git a/src/assets/v1.4.1/safe_to_l2_setup.json b/src/assets/v1.4.1/safe_to_l2_setup.json
-index 0c4d1b92c2e1d1834230d2151e3e7f87c963c76b..2d302f15a0031d11cccdb2d3c7ca931b1bf921d8 100644
+index 0c4d1b92c2e1d1834230d2151e3e7f87c963c76b..c8b8b91fb5a4b38bfbe10e67844bb32763246054 100644
 --- a/src/assets/v1.4.1/safe_to_l2_setup.json
 +++ b/src/assets/v1.4.1/safe_to_l2_setup.json
-@@ -13,6 +13,9 @@
+@@ -13,6 +13,10 @@
      }
    },
    "networkAddresses": {
 +    "2522": "canonical",
 +    "8008": "canonical",
 +    "80008": "canonical",
++    "17069": "canonical",
      "1": "canonical",
      "10": "canonical",
      "14": "canonical",
