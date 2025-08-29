@@ -102,7 +102,7 @@ const SidebarFooter = (): ReactElement => {
       </ListItem>
 
       <ListItem>
-        <SidebarListItemText>
+        <SidebarListItemText sx={{ mx: 'auto', textAlign: 'center' }}>
           <Typography variant="caption">
             Supported by{' '}
             <SvgIcon
