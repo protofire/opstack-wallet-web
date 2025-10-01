@@ -12,7 +12,7 @@ import MUILink from '@mui/material/Link'
 import { IS_OFFICIAL_HOST } from '@/config/constants'
 import darkPalette from '@/components/theme/darkPalette'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
-import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
+import { PROTOFIRE_SUPPORT_LINK } from '@safe-global/utils/config/constants'
 
 const footerPages = [
   AppRoutes.welcome.index,
@@ -72,7 +72,7 @@ const Footer = (): ReactElement | null => {
               <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
             </li>
             <li>
-              <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+              <ExternalLink href={PROTOFIRE_SUPPORT_LINK} noIcon sx={{ span: { textDecoration: 'underline' } }}>
                 Help
               </ExternalLink>
             </li>
@@ -81,11 +81,6 @@ const Footer = (): ReactElement | null => {
 
         <li>
           <Typography variant="caption">&copy;{new Date().getFullYear()} Superchain Safe</Typography>
-        </li>
-        <li>
-          <ExternalLink noIcon href="https://www.optimism.io/about">
-            Optimism
-          </ExternalLink>
         </li>
         <li>
           <ExternalLink noIcon href="https://app.optimism.io/superchain">
@@ -104,7 +99,7 @@ const Footer = (): ReactElement | null => {
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+          <ExternalLink href={PROTOFIRE_SUPPORT_LINK} noIcon sx={{ span: { textDecoration: 'underline' } }}>
             Help
           </ExternalLink>
         </li>
