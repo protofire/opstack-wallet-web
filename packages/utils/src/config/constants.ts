@@ -47,6 +47,9 @@ export const HelpCenterArticle = {
 export const HelperCenterArticleTitles = {
   RECOVERY: 'Learn more about the Account recovery process',
 }
+
+export const PROTOFIRE_SUPPORT_LINK = 'https://safe-support.protofire.io'
+
 // Social
 export const DISCORD_URL = 'https://chat.safe.global'
 export const TWITTER_URL = 'https://twitter.com/safe'
