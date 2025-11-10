@@ -10,18 +10,18 @@ import SafeAppsDashboardSection from '@/components/dashboard/SafeAppsDashboardSe
 import GovernanceSection from '@/components/dashboard/GovernanceSection/GovernanceSection'
 import { useIsRecoverySupported } from '@/features/recovery/hooks/useIsRecoverySupported'
 import StakingBanner from '@/components/dashboard/StakingBanner'
-import { useHasFeature } from '@/hooks/useChains'
-import { FEATURES } from '@/utils/chains'
+import { useChain, useHasFeature } from '@/hooks/useChains'
 import css from './styles.module.css'
 import { InconsistentSignerSetupWarning } from '@/features/multichain/components/SignerSetupWarning/InconsistentSignerSetupWarning'
 import useIsStakingBannerEnabled from '@/features/stake/hooks/useIsStakingBannerEnabled'
 import { SunsetWarning } from '@/features/warningBanner/SunsetWarning'
-//import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
+import { FEATURES } from '@/utils/chains'
 
 const RecoveryHeader = dynamic(() => import('@/features/recovery/components/RecoveryHeader'))
 
 const Dashboard = (): ReactElement => {
   const { safe } = useSafeInfo()
+  const chain = useChain(safe.chainId)
   const showSafeApps = useHasFeature(FEATURES.SAFE_APPS)
   //const isSwapFeatureEnabled = useIsSwapFeatureEnabled()
   const isStakingBannerEnabled = useIsStakingBannerEnabled()
@@ -36,7 +36,7 @@ const Dashboard = (): ReactElement => {
           <InconsistentSignerSetupWarning />
         </Grid>
         <Grid item xs={12}>
-          <SunsetWarning />
+          <SunsetWarning chainName={chain?.chainName || 'unknown'} />
         </Grid>
         <Grid item xs={12}>
           <Overview />
