@@ -12,7 +12,8 @@ export const SunsetWarning = (props: { chainName: string }) => {
   return (
     <ErrorMessage level="warning" title={`${props.chainName} Support Sunsetting`}>
       <Typography display="inline" mr={1}>
-        Dear users, Support for {props.chainName} will end soon. Please withdraw your funds until November 17. Interaction with safes will remain available through the{' '}
+        Dear users, Support for {props.chainName} will end soon. Please withdraw your funds until November 17.
+        Interaction with safes will remain available through the{' '}
         <ExternalLink href="https://docs.safe.global/advanced/cli-overview">Safe CLI</ExternalLink>.
       </Typography>
     </ErrorMessage>
