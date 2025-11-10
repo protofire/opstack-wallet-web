@@ -8,7 +8,7 @@ import AssetsWidget from '@/components/dashboard/Assets'
 import Overview from '@/components/dashboard/Overview/Overview'
 import SafeAppsDashboardSection from '@/components/dashboard/SafeAppsDashboardSection/SafeAppsDashboardSection'
 import { useIsRecoverySupported } from '@/features/recovery/hooks/useIsRecoverySupported'
-import { useHasFeature } from '@/hooks/useChains'
+import { useChain, useHasFeature } from '@/hooks/useChains'
 import css from './styles.module.css'
 import { InconsistentSignerSetupWarning } from '@/features/multichain/components/SignerSetupWarning/InconsistentSignerSetupWarning'
 import useIsStakingBannerEnabled from '@/features/stake/hooks/useIsStakingBannerEnabled'
@@ -23,6 +23,7 @@ const RecoveryHeader = dynamic(() => import('@/features/recovery/components/Reco
 
 const Dashboard = (): ReactElement => {
   const { safe } = useSafeInfo()
+  const chain = useChain(safe.chainId)
   const showSafeApps = useHasFeature(FEATURES.SAFE_APPS)
   //const isSwapFeatureEnabled = useIsSwapFeatureEnabled()
   const isStakingBannerEnabled = useIsStakingBannerEnabled()
@@ -37,7 +38,7 @@ const Dashboard = (): ReactElement => {
           <InconsistentSignerSetupWarning />
         </Grid>
         <Grid item xs={12}>
-          <SunsetWarning />
+          <SunsetWarning chainName={chain?.chainName || 'unknown'} />
         </Grid>
         <Grid item xs={12} className={css.hideIfEmpty}>
           <UnsupportedMastercopyWarning />
