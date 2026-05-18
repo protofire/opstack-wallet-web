@@ -8,7 +8,7 @@ import AssetsWidget from '@/components/dashboard/Assets'
 import Overview from '@/components/dashboard/Overview/Overview'
 import SafeAppsDashboardSection from '@/components/dashboard/SafeAppsDashboardSection/SafeAppsDashboardSection'
 import { useIsRecoverySupported } from '@/features/recovery/hooks/useIsRecoverySupported'
-import { useChain, useHasFeature } from '@/hooks/useChains'
+import { useHasFeature } from '@/hooks/useChains'
 import css from './styles.module.css'
 import { InconsistentSignerSetupWarning } from '@/features/multichain/components/SignerSetupWarning/InconsistentSignerSetupWarning'
 import useIsStakingBannerEnabled from '@/features/stake/hooks/useIsStakingBannerEnabled'
@@ -16,7 +16,6 @@ import { FEATURES } from '@safe-global/utils/utils/chains'
 import { UnsupportedMastercopyWarning } from '@/features/multichain/components/UnsupportedMastercopyWarning/UnsupportedMasterCopyWarning'
 import NewsDisclaimers from './NewsCarousel/NewsDisclaimers'
 import StakingBanner from './StakingBanner'
-import { SunsetWarning } from '@/features/warningBanner/SunsetWarning'
 import { SunsetBanner } from './SunsetBanner'
 //import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
 
@@ -24,7 +23,6 @@ const RecoveryHeader = dynamic(() => import('@/features/recovery/components/Reco
 
 const Dashboard = (): ReactElement => {
   const { safe } = useSafeInfo()
-  const chain = useChain(safe.chainId)
   const showSafeApps = useHasFeature(FEATURES.SAFE_APPS)
   //const isSwapFeatureEnabled = useIsSwapFeatureEnabled()
   const isStakingBannerEnabled = useIsStakingBannerEnabled()
@@ -40,9 +38,6 @@ const Dashboard = (): ReactElement => {
         </Grid>
         <Grid item xs={12} className={css.hideIfEmpty} sx={{ '& > div': { m: 0 } }}>
           <SunsetBanner />
-        </Grid>
-        <Grid item xs={12}>
-          <SunsetWarning chainName={chain?.chainName || 'unknown'} />
         </Grid>
         <Grid item xs={12} className={css.hideIfEmpty}>
           <UnsupportedMastercopyWarning />
