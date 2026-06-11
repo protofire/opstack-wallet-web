@@ -14,7 +14,7 @@ export const SunsetBanner = () => {
     return (
       <ErrorMessage level="warning" title="Swell Support Sunsetting">
         <Typography display="inline" mr={1}>
-          Dear users, Support for Swell Networks will end soon. Please withdraw your funds until June 1, 2026. For
+          Dear users, Support for Swell Networks will end soon. Please withdraw your funds until June 15, 2026. For
           further details regarding the shutdown, please refer to this page (
           <ExternalLink
             href="https://x.com/swellnetworkio/status/2049065334536016382"
