@@ -70,6 +70,9 @@ export enum SafeAppsTag {
 
 export const HELP_CENTER_URL = 'https://safe-support.protofire.io'
 
+// Protofire Safe (destination for the Superchain networks migration)
+export const PROTOFIRE_SAFE_URL = 'https://app.safe.protofire.io'
+
 // Safe Apps names
 export enum SafeAppsName {
   CSV = 'CSV Airdrop',
