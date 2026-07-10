@@ -27,23 +27,24 @@ export const SunsetBanner = () => {
       </ErrorMessage>
     )
   } else if (showMigrationBanner) {
-    // Warning should be visible across all other networks
+    // Warning should be visible across all Superchain networks
     return (
       <ErrorMessage level="warning" title="Superchain Safe is merging with Protofire Safe!">
         <Typography display="inline" mr={1}>
-          Your Safes and transaction history are already accessible at{' '}
+          Safe support for the Superchain networks (Cyber, Superseed, Soneium, Ink, Lisk and Metal L2) is moving to the
+          Protofire Safe interface. <br />
+          Please read the details and next steps on the{' '}
           <ExternalLink
-            href="https://app.safe.protofire.io/welcome"
+            href="https://app.safe.protofire.io/superchain-migration"
             sx={{ '& > span': { textDecoration: 'underline' } }}
           >
-            Protofire Safe!
+            Superchain migration page
           </ExternalLink>
-          . <br />
-          Export your local data via{' '}
+          , and export your local data via{' '}
           <Link style={{ fontWeight: 'bold', textDecoration: 'underline' }} href={AppRoutes.settings.data}>
             Settings {'>'} Data page{' '}
           </Link>
-          (added Safes, address book, settings, etc.), <br /> and finalize any open transactions before <b>June 30</b>.
+          (added Safes, address book, settings, etc.) before support ends.
         </Typography>
       </ErrorMessage>
     )
